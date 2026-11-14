@@ -1,0 +1,11 @@
+sentence-transformers>=3.0   # Hugging Face embedding models (installs PyTorch + transformers)
+torch>=2.2
+scikit-learn>=1.3
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+pypdf>=4.0
+python-docx>=1.1
+streamlit>=1.32
+kagglehub>=0.2               # downloads the Kaggle Resume Dataset for the benchmark
+pytest>=8.0

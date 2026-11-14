@@ -1,0 +1,21 @@
+AI/ML Intern (6 months) - Wireless & Edge Analytics
+
+About the role
+You will build machine learning models for network performance prediction and deploy them on edge devices.
+
+Responsibilities
+- Develop and train deep learning models (LSTM, CNN) for time-series forecasting of network traffic
+- Preprocess and analyze large datasets using Python, Pandas and NumPy
+- Deploy lightweight models on Raspberry Pi or similar embedded platforms
+- Document experiments and communicate results to the team
+
+Requirements
+- Strong programming skills in Python
+- Hands-on experience with TensorFlow or PyTorch
+- Understanding of machine learning fundamentals and model evaluation
+- Familiarity with Git and Linux
+
+Nice to have
+- Knowledge of 5G network slicing or wireless communication
+- Experience with optimization algorithms such as PSO or genetic algorithms
+- Exposure to Docker and REST APIs (Flask/FastAPI)

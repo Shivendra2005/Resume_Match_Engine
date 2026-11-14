@@ -1,0 +1,4 @@
+Frontend developer with experience in React, JavaScript, TypeScript, HTML/CSS and Node.js.
+- Built responsive dashboards for e-commerce clients
+- Worked with REST APIs and Git in an agile team
+- Strong communication and teamwork

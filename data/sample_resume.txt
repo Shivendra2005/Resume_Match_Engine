@@ -1,0 +1,23 @@
+Shivendra
+B.Tech Electronics and Telecommunication Engineering, Symbiosis Institute of Technology, Pune
+Minor in AI/ML
+
+Skills
+Python, Java, C, MATLAB, TensorFlow, Keras, scikit-learn, Pandas, NumPy, Arduino, Raspberry Pi, Git, HTML/CSS, React
+
+Projects
+AI-Driven SLA-Aware Resource Allocation for 5G/6G Network Slicing
+- Designed PRB allocation for network slices using PSO, genetic algorithm and reinforcement learning
+- Built an LSTM model to forecast slice traffic demand from a MATLAB-generated dataset
+- Reduced SLA violations by 18% compared to a static allocation baseline
+
+IR Corridor Activity Monitoring System
+- Developed an embedded system on Arduino Mega 2560 with IR sensors to detect and count corridor movement
+- Logged events and visualised activity patterns in Python
+
+AI-Based Resume Match Engine
+- Built an NLP engine that scores resumes against job descriptions using sentence embeddings, TF-IDF and skill-gap analysis
+- Deployed an interactive Streamlit web app with PDF/DOCX parsing
+
+Coursework
+Wireless communication, digital signal processing, machine learning, object oriented programming
