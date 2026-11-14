@@ -85,25 +85,3 @@ tests/                    unit tests (pytest)
 
 ## Limitations
 The skill list is written by hand; JD sections are detected with simple rules; score weights are fixed, not learned. The Kaggle categories overlap (e.g. Consultant vs Business Development), so no method reaches a perfect score. Next steps: learn the weights from labelled resume–job pairs and fine-tune the embedding model on resume text.
-
----
-
-## Explaining this project in an interview
-
-**One-line pitch:** "I built a tool that scores a resume against a job description and tells you what's missing. I compared plain keyword matching with a Hugging Face transformer model on 2,400 real resumes to see which ranks candidates better."
-
-**What is TF-IDF?** It counts words. A word scores high if it appears often in this document but rarely across all documents. Two documents are similar if they share important words. Weakness: "ML" and "machine learning" look different, and synonyms don't match.
-
-**What are sentence embeddings?** A pretrained model turns a sentence into a list of 384 numbers. It was trained on over a billion sentence pairs so that sentences with similar meaning get similar numbers. I compare two sentences with cosine similarity (the angle between the vectors: 1 = same meaning, 0 = unrelated).
-
-**Why all-MiniLM-L6-v2?** It's small (6 layers, ~22M parameters, ~90 MB), fast on a CPU, and widely used for semantic search. A bigger model would be slower for a small gain.
-
-**Where do PyTorch and Hugging Face come in?** The model is hosted on the Hugging Face Hub. The Sentence-Transformers library downloads it and runs it, and it's built on PyTorch, which does the actual math (and uses the GPU in Colab).
-
-**Why split resumes into chunks?** The model only reads about 256 tokens (~200 words) at a time and ignores the rest. Resumes are longer, so I split them into 150-word pieces and use the piece that best matches the job.
-
-**Why a hybrid?** Keywords are good at exact skill names; embeddings are good at meaning. Averaging the two (after putting both on the same scale with z-scores) uses both strengths.
-
-**How did you measure it?** Each resume in the dataset has a known category, so I know the right answer. I wrote one job description per category, ranked all resumes for each, and measured precision at 10, MRR and nDCG.
-
-**What would you improve?** Fine-tune the embedding model on resume–job pairs, learn the score weights from data instead of choosing them, and use a better skill extractor.
